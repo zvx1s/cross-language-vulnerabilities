@@ -9,7 +9,6 @@ impl VulnerableBank {
         *self.balances.entry(who.into()).or_default() += amount;
     }
 
-    // Vulnerable: interaction before effects
     pub fn withdraw(&mut self, who: &str, amount: u64, attacker: &mut dyn FnMut()) {
         assert!(self.balances[who] >= amount);
         attacker(); // external call before balance update
