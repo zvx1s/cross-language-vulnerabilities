@@ -1,4 +1,4 @@
-# Reentrancy (Basic) — Rust
+# Reentrancy (Basic) in Rust
 
 Minimal Rust example of a reentrancy issue:
 
