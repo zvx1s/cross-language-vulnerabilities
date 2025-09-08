@@ -10,8 +10,10 @@ contract FixedBank {
 
     function withdraw(uint amount) external {
         require(balances[msg.sender] >= amount);
-        balances[msg.sender] -= amount;           // effects first
-        (bool ok,) = msg.sender.call{value: amount}(""); // interaction last
+        balances[msg.sender] -= amount;           
+        (bool ok,) = msg.sender.call{value: amount}(""); 
         require(ok);
     }
 }
+
+// Contract now follows proper CEI(Checks, Effects, Interactions)
