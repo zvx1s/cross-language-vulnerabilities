@@ -1,4 +1,4 @@
-# Reentrancy (Basic)
+# Reentrancy #1 in Soldiity
 
 A minimal example of how reentrancy works and how to prevent it using the
 Checks–Effects–Interactions (CEI) pattern.
