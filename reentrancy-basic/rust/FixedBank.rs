@@ -12,6 +12,7 @@ impl FixedBank {
     pub fn withdraw(&mut self, who: &str, amount: u64, attacker: &mut dyn FnMut()) {
         assert!(self.balances[who] >= amount);
         self.balances.insert(who.into(), self.balances[who] - amount);
-        attacker(); // interaction last
+        attacker(); 
     }
 }
+// Contract now follows proper CEI(Checks, Effects, Interactions)
