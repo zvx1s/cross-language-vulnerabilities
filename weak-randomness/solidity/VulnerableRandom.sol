@@ -10,7 +10,7 @@ contract VulnerableRandom {
         return uint(h) % 10; // number 0–9
     }
 
-    // Example “game”: guess today’s number.
+    // Example “game”: guess what is today’s number.
     function guess(uint n) external view returns (bool) {
         return n == draw();
     }
