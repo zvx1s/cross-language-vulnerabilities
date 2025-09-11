@@ -3,7 +3,7 @@ pragma solidity ^0.8.30;
 
 contract VulnerableRandom {
     function draw() public view returns (uint) {
-        // Anyone can predict this before the tx is mined.
+        // Anyone can predict this before the tx is completely mined.
         bytes32 h = keccak256(
             abi.encodePacked(block.timestamp, blockhash(block.number - 1))
         );
