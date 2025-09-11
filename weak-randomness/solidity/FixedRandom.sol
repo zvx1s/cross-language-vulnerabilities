@@ -16,7 +16,7 @@ contract FixedRandom {
         require(keccak256(abi.encodePacked(secret)) == commit, "Bad secret");
         require(block.number > commitBlock, "Too soon");
 
-        // Use the blockhash fixed at commit time + secret (but can’t be influenced now).
+        // Use the blockhash fixed at commit time + secret (but can’t be influenced at all now).
         bytes32 h = keccak256(abi.encodePacked(secret, blockhash(commitBlock)));
         return uint(h) % 10; // number 0–9
     }
