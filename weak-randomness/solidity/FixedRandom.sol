@@ -11,7 +11,6 @@ contract FixedRandom {
         commitBlock = block.number;
     }
 
-    // Reveal after at least 1 block; uses past blockhash + secret.
     function reveal(bytes32 secret) external view returns (uint) {
         require(commit != bytes32(0), "No commit");
         require(keccak256(abi.encodePacked(secret)) == commit, "Bad secret");
