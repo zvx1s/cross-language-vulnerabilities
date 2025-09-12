@@ -19,7 +19,7 @@ impl VulnerableLottery {
         if self.players.is_empty() {
             return None;
         }
-        // Weak randomness: uses timestamp
+        // This is a weak randomness: uses timestamp
         let now = SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .unwrap()
