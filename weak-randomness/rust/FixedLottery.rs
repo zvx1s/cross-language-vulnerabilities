@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MIT
 
 use rand::{thread_rng, Rng};
