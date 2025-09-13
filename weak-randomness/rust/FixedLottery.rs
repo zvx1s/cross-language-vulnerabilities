@@ -19,7 +19,7 @@ impl FixedLottery {
         if self.players.is_empty() {
             return None;
         }
-        // This shows stronger randomness of the usage of RNG
+        // This displays stronger randomness of the usage of RNG
         let mut rng = thread_rng();
         let index = rng.gen_range(0..self.players.len());
         Some(&self.players[index])
