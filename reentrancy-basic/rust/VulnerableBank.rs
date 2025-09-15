@@ -6,7 +6,7 @@ pub struct VulnerableBank {
 
 impl VulnerableBank {
     pub fn deposit(&mut self, who: &str, amount: u64) {
-        *self.balances.entry(who.into()).or_default() += amount;
+        *self.balances.entry(who.into()).or_default()+=amount;
     }
 
     pub fn withdraw(&mut self, who: &str, amount: u64, attacker: &mut dyn FnMut()) {
