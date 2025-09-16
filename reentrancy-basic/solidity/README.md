@@ -16,3 +16,12 @@ Always apply **CEI**:
 1. Check conditions  
 2. Update state (effects)  
 3. Interact with external addresses last
+
+# Reentrancy (Basic) — Solidity
+Short demo showing how withdrawing before updating state allows reentrancy.
+How to run:
+- `forge test --match-path test/PuppyRaffleTest.t.sol`
+Files:
+- `VulnerableBank.sol` — vulnerable
+- `FixedBank.sol` — CEI fix
+
