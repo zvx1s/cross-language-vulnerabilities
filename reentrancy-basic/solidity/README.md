@@ -17,6 +17,7 @@ Always apply **CEI**:
 2. Update state (effects)  
 3. Interact with external addresses last
 
+
 This is a short demo showing how withdrawing before updating state allows reentrancy.
 How to run:
 - `forge test --match-path test/PuppyRaffleTest.t.sol`
