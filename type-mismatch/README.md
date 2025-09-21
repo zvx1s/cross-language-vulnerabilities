@@ -1,4 +1,4 @@
-# Type Mismatch / Integer Truncation
+# Type Mismatch(Integer Truncation)
 
 This demo shows a common type-mismatch vulnerability: silently downcasting a large integer (e.g. `uint256`) to a smaller type (e.g. `uint160`). Solidity truncates high-order bits when you cast to a smaller unsigned integer, which can cause collisions or logic bypasses.
 
