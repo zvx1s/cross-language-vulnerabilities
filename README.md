@@ -1,6 +1,6 @@
 # Cross-Language Vulnerabilities
 
-This repo is a collection of **common smart contract vulnerabilities** implemented in multiple languages.  
+This repository is a collection of **common smart contract vulnerabilities** implemented in multiple languages.  
 The goal is to make each vulnerability easy to understand, compare, and fix across ecosystems like **Solidity**, **Vyper**, and **Rust (Anchor)**.
 
 ---
