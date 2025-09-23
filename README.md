@@ -6,7 +6,7 @@ The goal is to make each vulnerability easy to understand, compare, and fix acro
 ---
 
 ## Purpose
-- Learn vulnerabilities by studying minimal, reproducible examples.
+- Learn vulnerabilities by studying minimal & reproducible examples.
 - See how the same bug appears in different languages.
 - Practice writing secure fixes (and applying patterns like CEI).
 - Build a reference library you can expand as you grow as a security researcher.
