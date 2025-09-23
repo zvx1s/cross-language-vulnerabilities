@@ -14,7 +14,7 @@ The goal is to make each vulnerability easy to understand, compare, and fix acro
 ---
 
 ## Structure
-Each vulnerability has its own folder.  
+Each vulnerability has its own folder.
 Inside, there are language-specific subfolders with:
 - A **vulnerable** version  
 - A **fixed** version  
